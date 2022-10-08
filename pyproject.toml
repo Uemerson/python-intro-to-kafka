@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-intro-to-kafka"
+version = "0.1.0"
+description = ""
+authors = ["Uemerson Pinheiro Junior <uemersonpinheirojunior@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_intro_to_kafka"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+confluent-kafka = "^1.9.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.982"
+flake8 = "^5.0.4"
+pylint = "^2.15.3"
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
